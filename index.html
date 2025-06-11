@@ -17,6 +17,12 @@
           </a>
         </header>
         <!-- サイドバーの他の内容があればここに追加 -->
+        <ul class="sidebar-menu">
+          <li class="sidebar-menu-item tab-item" data-tab="converter">
+            <span class="ri-scales-3-line"></span>
+            Unit Converter
+          </li>
+        </ul>
       </aside>
       <!-- メインコンテンツなど他の要素があればここに追加 -->
       <main>
@@ -33,7 +39,30 @@
             <p>Small daily records become irreplaceable memories, and efficient task management leads to fulfilling days. Please use this as a partner that supports your everyday life.</p>
           </div>
         </section>
+        <section class="content-section hidden" id="converter">
+          <header class="section-header">
+            <h2 class="section-title">Length Unit Conversion</h2>
+          </header>
+          <div class="section-body">
+            <!-- 単位変換機能の内容をここに追加 -->
+             <form class="converter-form">
+              <input
+                class="converter-input"
+                type="number"
+                value="1000"
+              />
+              <select class="converter-from">
+                <!-- 変換元単位の選択肢をここに追加 -->
+              </select>
+              <select class="converter-to">
+                <!-- 変換先単位の選択肢をここに追加 -->
+              </select>
+              <div class="converter-result"></div>
+            </form>
+          </div>
+        </section>
       </main>
     </div>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
